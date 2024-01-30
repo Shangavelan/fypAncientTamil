@@ -2,7 +2,7 @@
 data : add pre-processed images(jpeg,jpg,tiff,png) here
 
 scripts : 
-        purge.py  -- use it to clear previously trained files for a fresh start
+        purge.py  -- use it to clear previously trained files for a fresh start\n
         rename.py -- the input images needs to be renames in the format <language>.<font>.exp<i>.png
         boxgen.py -- generate boc files for our images.
         openjTess.py -- open jtessbox editor to edit miss predicted box files
