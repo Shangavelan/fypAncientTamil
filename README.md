@@ -1,4 +1,4 @@
-
+trainining code for custom data in tesseract
 data : 
 
         add pre-processed images(jpeg,jpg,tiff,png) here
