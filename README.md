@@ -27,4 +27,4 @@ trainfiles:
 
 trainoutput:
        
-        contains the .traindata file and other intermediary output files
+        contains the .traindata file and other intermediary output file.
