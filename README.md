@@ -11,7 +11,7 @@ scripts :
         
         rename.py -- the input images needs to be renames in the format <language>.<font>.exp<i>.png
         
-        boxgen.py -- generate boc files for our images.
+        boxgen.py -- generate box files for our images.
        
         openjTess.py -- open jtessbox editor to edit miss predicted box files
        
