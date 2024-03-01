@@ -24,8 +24,12 @@ def preprocess_image(image_path, save_path):
     gray = cv2.cvtColor(resized_image, cv2.COLOR_BGR2GRAY)
 
     # Apply adaptive thresholding to binarize the image
-    binary = cv2.adaptiveThreshold(gray, 255,cv2.ADAPTIVE_THRESH_MEAN_C, cv2.THRESH_BINARY,  91,10)
+    #binary = cv2.adaptiveThreshold(gray, 255,cv2.ADAPTIVE_THRESH_MEAN_C, cv2.THRESH_BINARY,  91,10)
     #binary = cv2.adaptiveThreshold(gray, 255, cv2.ADAPTIVE_THRESH_GAUSSIAN_C, cv2.THRESH_BINARY, 91, 17)
+    windowSize = 91
+    windowConstant =17
+    # Apply the threshold:
+    binary = cv2.adaptiveThreshold(gray, 255, cv2.ADAPTIVE_THRESH_GAUSSIAN_C, cv2.THRESH_BINARY, windowSize, windowConstant)
 
     #border removal
     top=remove_border_size
