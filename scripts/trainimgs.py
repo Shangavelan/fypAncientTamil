@@ -14,7 +14,7 @@ for item in files:
 
 # Generating the tuples of filenames
 files = os.listdir(srcdir)
-jpgs = [x for x in files if x.endswith('.png','.jpg')]
+jpgs = [x for x in files if x.endswith('.jpg') or x.endswith('.png')]
 boxes = [x for x in files if x.endswith('.box')]
 trainfiles = list(zip(jpgs, boxes))
 
